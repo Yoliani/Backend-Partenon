@@ -6,12 +6,12 @@ Rails.application.routes.draw do
   #              sessions: 'users/sessions',
   #              registrations: 'users/registrations'
   #            }
-  # mount_devise_token_auth_for 'User', at: 'auth', controllers: {
-  #   registrations: 'users/registrations'
-  # }
+  mount_devise_token_auth_for 'User', at: 'auth', controllers: {
+    registrations: 'users/registrations'
+  }
   # get '/member-data', to: 'members#show'
 
-  devise_for :users, :controllers => {sessions: 'sessions', registrations: 'registrations'}
+  #devise_for :users, :controllers => {sessions: 'sessions', registrations: 'registrations'}
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
