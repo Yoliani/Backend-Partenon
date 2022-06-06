@@ -6,3 +6,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Tema.create!(nombre: 'Tecnología', descripcion: 'Tecnología')
+Tema.create!(nombre: 'Cientifico', descripcion: 'Tema Cientifico')
+puts 'The seeds have been created'
+
