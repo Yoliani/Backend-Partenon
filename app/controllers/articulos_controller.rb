@@ -34,6 +34,6 @@ class ArticulosController < ApplicationController
   end
 
   def articulo_params
-    params.require(:articulo).permit(:titulo, :resumen, :cuerpo, :tema_id)
+    params.require(:articulo).permit(:titulo, :resumen, :cuerpo, :tema_id, :status)
   end
 end
